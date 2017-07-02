@@ -894,7 +894,7 @@ blockquote {
 }
 
 .font-serif {
-  font-family: Volkhov, "Times New Roman", sans-serif;
+  font-family: "Times New Roman", sans-serif;
   font-style: italic;
 }
 
@@ -918,7 +918,7 @@ blockquote {
 
 .module-subtitle {
   text-align: center;
-  font-size: 16px;
+  font-size: 18px;
   color: #111;
   margin-bottom: 70px;
 }
@@ -2924,4 +2924,8 @@ Google map
   .works-grid-5 .work-item {
     width: 100%;
   }
+}
+
+#scoreboard h5 {
+  font-size: 21px;
 }
