@@ -9,8 +9,15 @@
 	<meta name="description"
 		  content="Hledáš pro svou bandu místo kde můžete v pohodě zkoušet? Nebo seš jen bubeník co by si rád zacvičil a neposlouchal při tom řev od sousedů? Tak vyzkoušej naše sdílené zkušebny v Brně.">
 
-	<!--<link href="/asset/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
+	<link href="/asset/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+	<link href="/asset/lib/animate/animate.css" rel="stylesheet">
+	<link href="/asset/lib/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="/asset/lib/et-line-font/et-line-font.css" rel="stylesheet">
+
+	<link href="/asset/css/style.css" rel="stylesheet">
 </head>
 
 <!-- @todo check data target etc. -->
@@ -20,7 +27,7 @@
 			<div class="loader">Načítám...</div>
 		</div>
 
-		<nav class="navbar navbar-custom navbar-fixed-top" role="navigation" id="top">
+		<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
 			<div class="container">
 
 				<div class="navbar-header">
@@ -49,7 +56,7 @@
 		</nav>
 
 		<section class="home-section home-full-height bg-dark bg-gradient" id="home"
-				 data-background="assets/images/section-10.jpg">
+				 data-background="assets/image/section-10.jpg">
 			<div class="titan-caption">
 				<div class="caption-content">
 					<!-- @todo needs second line? -->
@@ -73,46 +80,45 @@
 							</div>
 						</div>
 					</div>
-				</div>
-
-				<div class="row multi-columns-row">
-					<div class="col-md-3 col-sm-6 col-xs-12">
-						<div class="features-item">
-							<div class="features-icon"><span class="icon-lightbulb"></span></div>
-							<h3 class="features-title font-alt">Ideas and concepts</h3>
-							<p>Careful attention to detail and clean, well structured code ensures a smooth user
-								experience for all your visitors.</p>
+					<div class="row multi-columns-row">
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<div class="features-item">
+								<div class="features-icon"><span class="icon-lightbulb"></span></div>
+								<h3 class="features-title font-alt">Ideas and concepts</h3>
+								<p>Careful attention to detail and clean, well structured code ensures a smooth user
+									experience for all your visitors.</p>
+							</div>
 						</div>
-					</div>
-					<div class="col-md-3 col-sm-6 col-xs-12">
-						<div class="features-item">
-							<div class="features-icon"><span class="icon-bike"></span></div>
-							<h3 class="features-title font-alt">Optimised for speed</h3>
-							<p>Careful attention to detail and clean, well structured code ensures a smooth user
-								experience for all your visitors.</p>
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<div class="features-item">
+								<div class="features-icon"><span class="icon-bike"></span></div>
+								<h3 class="features-title font-alt">Optimised for speed</h3>
+								<p>Careful attention to detail and clean, well structured code ensures a smooth user
+									experience for all your visitors.</p>
+							</div>
 						</div>
-					</div>
-					<div class="col-md-3 col-sm-6 col-xs-12">
-						<div class="features-item">
-							<div class="features-icon"><span class="icon-tools"></span></div>
-							<h3 class="features-title font-alt">Designs &amp; interfaces</h3>
-							<p>Careful attention to detail and clean, well structured code ensures a smooth user
-								experience for all your visitors.</p>
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<div class="features-item">
+								<div class="features-icon"><span class="icon-tools"></span></div>
+								<h3 class="features-title font-alt">Designs &amp; interfaces</h3>
+								<p>Careful attention to detail and clean, well structured code ensures a smooth user
+									experience for all your visitors.</p>
+							</div>
 						</div>
-					</div>
-					<div class="col-md-3 col-sm-6 col-xs-12">
-						<div class="features-item">
-							<div class="features-icon"><span class="icon-gears"></span></div>
-							<h3 class="features-title font-alt">Highly customizable</h3>
-							<p>Careful attention to detail and clean, well structured code ensures a smooth user
-								experience for all your visitors.</p>
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<div class="features-item">
+								<div class="features-icon"><span class="icon-gears"></span></div>
+								<h3 class="features-title font-alt">Highly customizable</h3>
+								<p>Careful attention to detail and clean, well structured code ensures a smooth user
+									experience for all your visitors.</p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 
 			<!-- @todo sauce... some music theme image with text
-			<section class="module bg-dark-60" data-background="assets/images/section-6.jpg">
+			<section class="module bg-dark-60" data-background="assets/image/section-6.jpg">
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-12">
@@ -128,7 +134,7 @@
 			-->
 
 			<!-- @todo score board with: rooms (3), years of experience (9), happy bands (30+) -->
-			<section class="module bg-dark-60" data-background="assets/images/section-3.jpg">
+			<section class="module bg-dark-60" data-background="assets/image/section-3.jpg">
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-6 col-sm-offset-3">
@@ -331,8 +337,23 @@
 
 		<div class="scroll-up"><a href="#top"><i class="fa fa-angle-double-up"></i></a></div>
 
-		<script async="" defer="" type="text/javascript"
-				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKLSunw_hurkcgqfnlqzw64AfEimq8jbU"></script>
 	</main>
+
+	<script type="text/javascript" src="/asset/lib/jquery/dist/jquery.js"></script>
+	<script type="text/javascript" src="/asset/lib/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/asset/lib/wow/dist/wow.js"></script>
+	<!--<script type="text/javascript" src="/asset/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>-->
+	<script type="text/javascript" src="/asset/lib/isotope/dist/isotope.pkgd.js"></script>
+	<script type="text/javascript" src="/asset/lib/imagesloaded/imagesloaded.pkgd.js"></script>
+	<!--<script type="text/javascript" src="/asset/lib/flexslider/jquery.flexslider.js"></script>-->
+	<!--<script type="text/javascript" src="/asset/lib/owl.carousel/dist/owl.carousel.min.js"></script>-->
+	<script type="text/javascript" src="/asset/lib/smoothscroll.js"></script>
+	<!--<script type="text/javascript" src="/asset/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>-->
+	<!--<script type="text/javascript" src="/asset/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>-->
+	<script type="text/javascript" async="" defer=""
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKLSunw_hurkcgqfnlqzw64AfEimq8jbU"></script>
+	<script type="text/javascript" src="/asset/js/plugins.js"></script>
+	<script type="text/javascript" src="/asset/js/main.js"></script>
+
 </body>
 </html>
