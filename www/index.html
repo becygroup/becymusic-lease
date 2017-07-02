@@ -7,7 +7,7 @@
 
 	<title>Zkušebny Brno by BeCyMusic.cz</title>
 	<meta name="description"
-		  content="Hledáš pro svou bandu místo kde můžete v pohodě zkoušet? Nebo seš jen bubeník, co by si rád zacvičil a neposlouchal při tom řev od sousedů? Tak vyzkoušej naše sdílené zkušebny v Brně.">
+		  content="Hledáš pro svou kapelu místo kde můžete v pohodě zkoušet? Nebo seš jen bubeník, co by si rád zacvičil a neposlouchal při tom řev od sousedů? Tak vyzkoušej naše sdílené zkušebny v Brně.">
 
 	<link href="/asset/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -57,11 +57,9 @@
 		</nav>
 
 		<section class="home-section home-full-height bg-dark bg-gradient" id="home"
-				 data-background="asset/image/section-10.jpg">
+				 data-background="asset/image/music-01.jpg">
 			<div class="titan-caption">
 				<div class="caption-content">
-					<!-- @todo needs second line? -->
-					<!--<div class="font-alt mb-30 titan-title-size-1">hello & welcome</div>-->
 					<div class="font-alt mb-40 titan-title-size-4">Zkušebna pro<br> tebe a tvoji kapelu</div>
 					<a class="section-scroll btn btn-border-w btn-round" href="#services">Chci vědět víc</a>
 				</div>
@@ -117,22 +115,6 @@
 					</div>
 				</div>
 			</section>
-
-			<!-- @todo sauce... some music theme image with text
-			<section class="module bg-dark-60" data-background="assets/image/section-6.jpg">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-12">
-							<div class="video-box">
-								<div class="video-box-icon"><a class="video-pop-up" href="https://www.youtube.com/watch?v=TTxZj3DZiIM"><span class="icon-video"></span></a></div>
-								<div class="video-title font-alt">Presentation</div>
-								<div class="video-subtitle font-alt">Watch the video about our new products</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			-->
 
 			<!-- @todo score board with: rooms (3), years of experience (9), happy bands (30+) -->
 			<section class="module bg-dark-60" data-background="assets/image/section-3.jpg">
@@ -264,7 +246,17 @@
 				</div>
 			</section>
 
-		<!-- KAČI TADYYYYYYYYYYYYYYYYYYYYYY -->
+			<section class="module bg-dark-60" data-background="asset/image/music-02.jpg">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6 col-sm-offset-3">
+							<h2 class="module-title font-alt mb-0">Be inspired. Get ahead of trends.</h2>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- KAČI TADYYYYYYYYYYYYYYYYYYYYYY -->
 			<section id="process">
 				<div class="container">
 					<div class="row">
@@ -345,55 +337,74 @@
 				</div>
 			</section>
 
-			<!-- @todo fill contact -->
-			<section class="module" id="contact">
+			<section class="module bg-dark-60" data-background="asset/image/music-03.jpg">
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-6 col-sm-offset-3">
-							<h2 class="module-title font-alt">Get in touch</h2>
-							<div class="module-subtitle font-serif"></div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-6 col-sm-offset-3">
-							<form id="contactForm" role="form" method="post" action="php/contact.php">
-								<div class="form-group">
-									<label class="sr-only" for="name">Name</label>
-									<input class="form-control" type="text" id="name" name="name"
-										   placeholder="Your Name*" required="required"
-										   data-validation-required-message="Please enter your name."/>
-									<p class="help-block text-danger"></p>
-								</div>
-								<div class="form-group">
-									<label class="sr-only" for="email">Email</label>
-									<input class="form-control" type="email" id="email" name="email"
-										   placeholder="Your Email*" required="required"
-										   data-validation-required-message="Please enter your email address."/>
-									<p class="help-block text-danger"></p>
-								</div>
-								<div class="form-group">
-									<textarea class="form-control" rows="7" id="message" name="message"
-											  placeholder="Your Message*" required="required"
-											  data-validation-required-message="Please enter your message."></textarea>
-									<p class="help-block text-danger"></p>
-								</div>
-								<div class="text-center">
-									<button class="btn btn-block btn-round btn-d" id="cfsubmit" type="submit">Submit
-									</button>
-								</div>
-							</form>
-							<div class="ajax-response font-alt" id="contactFormResponse"></div>
+							<h2 class="module-title font-alt mb-0">Be inspired. Get ahead of trends.</h2>
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<!-- @todo use google map -->
+			<!-- @todo fill contact -->
+			<section class="module" id="contact">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-8">
+							<h4 class="font-alt">Napiš nám</h4>
+							<form id="contactForm" role="form" method="post" action="php/contact.php">
+								<div class="form-group">
+									<label class="sr-only" for="name">Jméno</label>
+									<input class="form-control" type="text" id="name" name="name" placeholder="Tvoje jméno*" required="required" data-validation-required-message="Prosím vyplň jméno.">
+									<p class="help-block text-danger"></p>
+								</div>
+								<div class="form-group">
+									<label class="sr-only" for="email">E-mail</label>
+									<input class="form-control" type="email" id="email" name="email" placeholder="Tvůj e-mail*" required="required" data-validation-required-message="Prosím vyplň e-mail.">
+									<p class="help-block text-danger"></p>
+								</div>
+								<div class="form-group">
+									<textarea class="form-control" rows="7" id="message" name="message" placeholder="Mám zájem u vás zkoušet*" required="required" data-validation-required-message="Prosím vyplň zprávu."></textarea>
+									<p class="help-block text-danger"></p>
+								</div>
+								<div class="text-center">
+									<button class="btn btn-block btn-round btn-d" id="cfsubmit" type="submit">Odeslat</button>
+								</div>
+							</form>
+							<div class="ajax-response font-alt" id="contactFormResponse"></div>
+						</div>
+
+						<div class="col-sm-4">
+
+							<div class="alt-features-item mt-0">
+								<div class="alt-features-icon"><span class="icon-map"></span></div>
+								<h3 class="alt-features-title font-alt">Kde jsou naše zkušebny</h3>
+								Cacovice 2<br>
+								Brno
+							</div>
+
+							<div class="alt-features-item mt-xs-60">
+								<div class="alt-features-icon"><span class="icon-megaphone"></span></div>
+								<h3 class="alt-features-title font-alt">Další kontakt</h3>
+								Email: <a href="mailto:zkusebny@becymusic.cz">zkusebny@becymusic.cz</a><br>
+								Telefon: <a href="tel:00420732405157">+420 732 405 157</a><br>
+								Facebook: <a href="https://www.facebook.com/Zku%C5%A1ebny-Brno-by-BeCymusic-219643418552478/">Zkušebny Brno by BeCyMusic.cz</a><br>
+								<br>
+								Provozovatelem je společnost BeCy Group s.r.o.<br>
+								IČO: 04203623, DIČ: CZ04203623<br>
+								Spisová značka C 88766 vedená u Krajského soudu v Brně<br>
+								Číslo účtu 115-4629000217/0100 (KB)
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
 			<section id="map-section">
 				<div id="map"></div>
 			</section>
 
-			<!-- @todo needs this? -->
 			<hr class="divider-d">
 
 			<footer class="footer bg-dark">
@@ -413,7 +424,6 @@
 		</div>
 
 		<div class="scroll-up"><a href="#top"><i class="fa fa-angle-double-up"></i></a></div>
-
 	</main>
 
 	<script type="text/javascript" src="/asset/lib/jquery/dist/jquery.js"></script>

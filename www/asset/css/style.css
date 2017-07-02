@@ -1372,7 +1372,7 @@ General Styles - Owlcarousel
   position: relative;
   background-color: #fff;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center bottom;
   width: 100%;
   z-index: 0;
   background-size: cover;
@@ -1568,7 +1568,7 @@ Google map
 .alt-features-item {
   position: relative;
   padding-left: 55px;
-  margin: 65px 0 0 0;
+  margin: 35px 0 0 0;
 }
 
 .alt-features-icon {
