@@ -1248,6 +1248,7 @@ General Styles - Owlcarousel
   letter-spacing: 3px;
   font-size: 11px;
   transition: background, padding 0.4s ease-in-out 0s;
+  min-height: 60px;
 }
 
 .navbar a {
@@ -1265,13 +1266,27 @@ General Styles - Owlcarousel
 .navbar-custom .navbar-brand {
   letter-spacing: 4px;
   font-weight: 400;
-  font-size: 22px;
-  color: #fff;
+  font-size: 10px;
+  color: transparent;
+}
+.navbar-custom .navbar-header {
+  position: relative;
+}
+.navbar-custom .navbar-brand:before {
+  content: ' ';
+  background: url('/asset/image/web-logo.png');
+  display: block;
+  width: 199px;
+  height: 46px;
+
+  position: absolute;
+  top: 7px;
 }
 
 .navbar-custom .nav li > a {
   position: relative;
   color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
 }
 
 .navbar-custom .dropdown-menu > li > a {
@@ -1787,6 +1802,10 @@ Google map
   vertical-align: top;
   font-size: 16px;
   padding-top: 25px;
+}
+
+.price-table .btn {
+  font-weight: 600;
 }
 
 .price-details {

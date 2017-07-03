@@ -44,7 +44,6 @@
         var homeSection = $('.home-section'),
             navbar      = $('.navbar-custom'),
             navHeight   = navbar.height(),
-            worksgrid   = $('#works-grid'),
             width       = Math.max($(window).width(), window.innerWidth),
             mobileTest  = false;
 
@@ -111,41 +110,6 @@
                 }
             }
         }
-
-        /* ---------------------------------------------- /*
-         * Intro slider setup
-         /* ---------------------------------------------- */
-
-        if( $('.hero-slider').length > 0 ) {
-            $('.hero-slider').flexslider( {
-                animation: "fade",
-                animationSpeed: 1000,
-                animationLoop: true,
-                prevText: '',
-                nextText: '',
-                before: function(slider) {
-                    $('.titan-caption').fadeOut().animate({top:'-80px'},{queue:false, easing: 'swing', duration: 700});
-                    slider.slides.eq(slider.currentSlide).delay(500);
-                    slider.slides.eq(slider.animatingTo).delay(500);
-                },
-                after: function(slider) {
-                    $('.titan-caption').fadeIn().animate({top:'0'},{queue:false, easing: 'swing', duration: 700});
-                },
-                useCSS: true
-            });
-        }
-
-
-        /* ---------------------------------------------- /*
-         * Rotate
-         /* ---------------------------------------------- */
-
-        // $(".rotate").textrotator({
-        //     animation: "dissolve",
-        //     separator: "|",
-        //     speed: 3000
-        // });
-
 
         /* ---------------------------------------------- /*
          * Transparent navbar animation
@@ -231,92 +195,6 @@
             }
         });
 
-
-        /* ---------------------------------------------- /*
-         * Video popup, Gallery
-         /* ---------------------------------------------- */
-
-        // $('.video-pop-up').magnificPopup({
-        //     type: 'iframe'
-        // });
-
-        // $(".gallery-item").magnificPopup({
-        //     delegate: 'a',
-        //     type: 'image',
-        //     gallery: {
-        //         enabled: true,
-        //         navigateByImgClick: true,
-        //         preload: [0,1]
-        //     },
-        //     image: {
-        //         titleSrc: 'title',
-        //         tError: 'The image could not be loaded.'
-        //     }
-        // });
-
-
-        /* ---------------------------------------------- /*
-         * Portfolio
-         /* ---------------------------------------------- */
-
-        // var worksgrid   = $('#works-grid'),
-        //     worksgrid_mode;
-        //
-        // if (worksgrid.hasClass('works-grid-masonry')) {
-        //     worksgrid_mode = 'masonry';
-        // } else {
-        //     worksgrid_mode = 'fitRows';
-        // }
-        //
-        // worksgrid.imagesLoaded(function() {
-        //     worksgrid.isotope({
-        //         layoutMode: worksgrid_mode,
-        //         itemSelector: '.work-item'
-        //     });
-        // });
-        //
-        // $('#filters a').click(function() {
-        //     $('#filters .current').removeClass('current');
-        //     $(this).addClass('current');
-        //     var selector = $(this).attr('data-filter');
-        //
-        //     worksgrid.isotope({
-        //         filter: selector,
-        //         animationOptions: {
-        //             duration: 750,
-        //             easing: 'linear',
-        //             queue: false
-        //         }
-        //     });
-        //
-        //     return false;
-        // });
-
-
-        /* ---------------------------------------------- /*
-         * Testimonials
-         /* ---------------------------------------------- */
-
-        // if ($('.testimonials-slider').length > 0 ) {
-        //     $('.testimonials-slider').flexslider( {
-        //         animation: "slide",
-        //         smoothHeight: true
-        //     });
-        // }
-
-
-        /* ---------------------------------------------- /*
-         * Post Slider
-         /* ---------------------------------------------- */
-
-        // if ($('.post-images-slider').length > 0 ) {
-        //     $('.post-images-slider').flexslider( {
-        //         animation: "slide",
-        //         smoothHeight: true,
-        //     });
-        // }
-
-
         /* ---------------------------------------------- /*
          * Progress bar animations
          /* ---------------------------------------------- */
@@ -341,89 +219,6 @@
                 $(this).find('.count-to').countTo({from: 0, to: number, speed: 1200, refreshInterval: 30});
             });
         });
-
-
-        /* ---------------------------------------------- /*
-         * Youtube video background
-         /* ---------------------------------------------- */
-
-        // $(function(){
-        //     $(".video-player").mb_YTPlayer();
-        // });
-
-        // $('#video-play').click(function(event) {
-        //     event.preventDefault();
-        //     if ($(this).hasClass('fa-play')) {
-        //         $('.video-player').playYTP();
-        //     } else {
-        //         $('.video-player').pauseYTP();
-        //     }
-        //     $(this).toggleClass('fa-play fa-pause');
-        //     return false;
-        // });
-        //
-        // $('#video-volume').click(function(event) {
-        //     event.preventDefault();
-        //     if ($(this).hasClass('fa-volume-off')) {
-        //         $('.video-player').YTPUnmute();
-        //     } else {
-        //         $('.video-player').YTPMute();
-        //     }
-        //     $(this).toggleClass('fa-volume-off fa-volume-up');
-        //     return false;
-        // });
-
-
-        /* ---------------------------------------------- /*
-         * Owl Carousel
-         /* ---------------------------------------------- */
-
-        // $('.owl-carousel').each(function(i) {
-        //
-        //     // Check items number
-        //     if ($(this).data('items') > 0) {
-        //         items = $(this).data('items');
-        //     } else {
-        //         items = 4;
-        //     }
-        //
-        //     // Check pagination true/false
-        //     if (($(this).data('pagination') > 0) && ($(this).data('pagination') === true)) {
-        //         pagination = true;
-        //     } else {
-        //         pagination = false;
-        //     }
-        //
-        //     // Check navigation true/false
-        //     if (($(this).data('navigation') > 0) && ($(this).data('navigation') === true)) {
-        //         navigation = true;
-        //     } else {
-        //         navigation = false;
-        //     }
-        //
-        //     // Build carousel
-        //     $(this).owlCarousel( {
-        //         navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-        //         nav: navigation,
-        //         dots: pagination,
-        //         loop: true,
-        //         dotsSpeed: 400,
-        //         items: items,
-        //         navSpeed: 300,
-        //         autoplay: 2000
-        //     });
-        //
-        // });
-
-
-        /* ---------------------------------------------- /*
-         * Blog masonry
-         /* ---------------------------------------------- */
-
-        // $('.post-masonry').imagesLoaded(function() {
-        //     $('.post-masonry').masonry();
-        // });
-
 
         /* ---------------------------------------------- /*
          * Scroll Animation
@@ -452,8 +247,7 @@
                 $cfsubmit = $("#cfsubmit"),
                 cfsubmitText = $cfsubmit.text();
 
-            $cfsubmit.text("Sending...");
-
+            $cfsubmit.text("Odesílám...");
 
             $.ajax(
                 {
@@ -468,132 +262,13 @@
                         $('#contactForm textarea[name=message]').val('');
                     },
                     error: function (data) {
-                        alert("Error occurd! Please try again");
+                        alert("Něco se pokazilo! Zkus to znova nebo zavolej");
                     }
                 });
 
             return false;
 
         });
-
-
-        /*===============================================================
-         Working Request A Call Form
-         ================================================================*/
-
-        // $("#requestACall").submit(function (e) {
-        //
-        //     e.preventDefault();
-        //     var $ = jQuery;
-        //
-        //     var postData = $(this).serializeArray(),
-        //         formURL = $(this).attr("action"),
-        //         $cfResponse = $('#requestFormResponse'),
-        //         $cfsubmit = $("#racSubmit"),
-        //         cfsubmitText = $cfsubmit.text();
-        //
-        //     $cfsubmit.text("Sending...");
-        //
-        //
-        //     $.ajax(
-        //         {
-        //             url: formURL,
-        //             type: "POST",
-        //             data: postData,
-        //             success: function (data) {
-        //                 $cfResponse.html(data);
-        //                 $cfsubmit.text(cfsubmitText);
-        //                 $('#requestACall input[name=name]').val('');
-        //                 $('#requestACall input[name=subject]').val('');
-        //                 $('#requestACall textarea[name=phone]').val('');
-        //             },
-        //             error: function (data) {
-        //                 alert("Error occurd! Please try again");
-        //             }
-        //         });
-        //
-        //     return false;
-        //
-        // });
-
-
-        /*===============================================================
-         Working Reservation Form
-         ================================================================*/
-
-        // $("#reservationForm").submit(function (e) {
-        //
-        //     e.preventDefault();
-        //     var $ = jQuery;
-        //
-        //     var postData = $(this).serializeArray(),
-        //         formURL = $(this).attr("action"),
-        //         $cfResponse = $('#reservationFormResponse'),
-        //         $cfsubmit = $("#rfsubmit"),
-        //         cfsubmitText = $cfsubmit.text();
-        //
-        //     $cfsubmit.text("Sending...");
-        //
-        //
-        //     $.ajax(
-        //         {
-        //             url: formURL,
-        //             type: "POST",
-        //             data: postData,
-        //             success: function (data) {
-        //                 $cfResponse.html(data);
-        //                 $cfsubmit.text(cfsubmitText);
-        //                 $('#reservationForm input[name=date]').val('');
-        //                 $('#reservationForm input[name=time]').val('');
-        //                 $('#reservationForm textarea[name=people]').val('');
-        //                 $('#reservationForm textarea[name=email]').val('');
-        //             },
-        //             error: function (data) {
-        //                 alert("Error occurd! Please try again");
-        //             }
-        //         });
-        //
-        //     return false;
-        //
-        // });
-
-
-        /* ---------------------------------------------- /*
-         * Subscribe form ajax
-         /* ---------------------------------------------- */
-
-        $('#subscription-form').submit(function(e) {
-
-            e.preventDefault();
-            var $form           = $('#subscription-form');
-            var submit          = $('#subscription-form-submit');
-            var ajaxResponse    = $('#subscription-response');
-            var email           = $('input#semail').val();
-
-            $.ajax({
-                type: 'POST',
-                url: 'assets/php/subscribe.php',
-                dataType: 'json',
-                data: {
-                    email: email
-                },
-                cache: false,
-                beforeSend: function(result) {
-                    submit.empty();
-                    submit.append('<i class="fa fa-cog fa-spin"></i> Wait...');
-                },
-                success: function(result) {
-                    if(result.sendstatus == 1) {
-                        ajaxResponse.html(result.message);
-                        $form.fadeOut(500);
-                    } else {
-                        ajaxResponse.html(result.message);
-                    }
-                }
-            });
-
-        });
-
 
         /* ---------------------------------------------- /*
          * Google Map
@@ -835,14 +510,24 @@
             var marker = new google.maps.Marker({
                 position: mkr,
                 icon: image,
-                title: 'Titan',
+                title: 'Zkušebny by BeCyMusic.cz',
                 infoWindow: {
-                    content: '<p><strong>Rival</strong><br/>121 Somewhere Ave, Suite 123<br/>P: (123) 456-7890<br/>Australia</p>'
+                    content: '<p><strong>Zkušebny by BeCyMusic.cz</strong><br>Cacovice 2, Brno</p>'
                 },
                 map: map
             });
         }
 
+    });
+
+    $('.price-table a').on('click', function(e){
+        e.preventDefault();
+
+        var $me = $(this);
+        $('#message').val($me.attr('data-message'));
+	    $('#name').focus();
+
+	    $('html,body').animate({scrollTop: $('#contact').offset().top},'slow');
     });
 })(jQuery);
 
