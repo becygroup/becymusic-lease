@@ -1,0 +1,7 @@
+<IfModule mod_rewrite.c>
+        Options +FollowSymLinks
+
+		RewriteEngine on
+		RewriteCond %{HTTP_HOST} ^becymusic.cz [NC]
+		RewriteRule ^(.*)$ http://www.becymusic.cz/$1 [L,R=301,NC]
+</IfModule>
