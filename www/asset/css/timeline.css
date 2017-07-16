@@ -144,6 +144,9 @@
 		margin-top: 40px;
 		line-height: 26px;
 	}
+	.timeline > li .timeline-image.tl-en h4 {
+		margin-top: 65px;
+	}
 	.timeline > li.timeline-inverted > .timeline-panel {
 		padding: 0 20px 20px;
 	}
