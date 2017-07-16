@@ -1,7 +1,13 @@
 <IfModule mod_rewrite.c>
         Options +FollowSymLinks
-
 		RewriteEngine on
-		RewriteCond %{HTTP_HOST} ^becymusic.cz [NC]
-		RewriteRule ^(.*)$ http://www.becymusic.cz/$1 [L,R=301,NC]
+
+#		RewriteCond %{HTTP_HOST} !^www\.
+#		RewriteRule ^ http://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+		# anglicka verze
+		RewriteCond   %{REQUEST_URI} en
+		RewriteCond %{REQUEST_FILENAME} !-f
+		RewriteCond %{REQUEST_FILENAME} !-d
+		RewriteRule   ^(.*)$ index.en.html [L]
 </IfModule>
